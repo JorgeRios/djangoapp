@@ -18,7 +18,7 @@ from django.contrib import admin
 from mycars import views
 
 urlpatterns = [
+    url(r'^$', views.index, name="index"),
     url(r'^polls/', include('polls.urls')),
-    url('index', views.index, name="index"),
     url(r'^admin/', admin.site.urls),
 ]
